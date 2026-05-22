@@ -1,0 +1,29 @@
+<h2>Park Lot Reservation</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Lot</th>
+            <th>Location</th>
+            <th>Capacity</th>
+            <th>Space</th>
+            <th>Cost</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let parking of parking">
+            <td> {{parking.lot}} </td>
+            <td> {{parking.location}} </td>
+            <td> {{parking.capacity}} </td>
+            <td> {{parking.space}} </td>
+            <td> {{parking.cost}} </td>
+            <td>
+                <button (click) = "updateParking(parking.lot)" class="btn btn-info">Update</button> 
+                <!-- <button (click) = "parkingDetails(parking.lot)" class="btn btn-info" style="margin-left: 10px">Details</button>  -->
+                <button (click) = "deleteParking(parking.lot)" class="btn btn-danger" style="margin-left: 10px">Delete</button> 
+            </td>
+        </tr>
+    </tbody>
+
+
+</table>

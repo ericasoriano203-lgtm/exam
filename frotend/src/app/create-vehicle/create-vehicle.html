@@ -1,0 +1,33 @@
+<div class="col-md-6 offset-md-3">
+<h3> Register Vehicle</h3>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label>License</label>
+        <input type="number" class="form-control" id="license"
+            [(ngModel)] = "vehicle.license" name="license">
+    </div>
+
+    <div class="form-group">
+        <label>Type</label>
+        <input type="text" class="form-control" id="type"
+            [(ngModel)] = "vehicle.type" name="type">
+    </div>
+
+    <div class="form-group">
+        <label>Owner</label>
+        <input type="text" class="form-control" id="owner"
+            [(ngModel)] = "vehicle.owner" name="owner">
+    </div>
+
+    <div class="form-group">
+        <label>Lot</label>
+        <input type="number" class="form-control" id="lot"
+            [(ngModel)] = "vehicle.lot" name="lot">
+    </div>
+  
+
+    <button class = "btn btn-success" type="submit">Submit</button>
+
+</form>
+</div> 

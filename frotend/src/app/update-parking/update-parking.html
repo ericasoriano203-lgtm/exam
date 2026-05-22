@@ -1,0 +1,28 @@
+<div class="col-md-4 offset-md-4">
+<h3> Update Parking </h3>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label>Lot</label>
+        <input type="number" class="form-control" id="lot"
+            [(ngModel)] = "parking.lot" name="lot">
+    </div>
+
+    <div class="form-group">
+        <label>Location</label>
+        <input type="text" class="form-control" id="location"
+            [(ngModel)] = "parking.location" name="location">
+    </div>
+
+    <div class="form-group">
+        <label>Cost</label>
+        <input type="number" class="form-control" id="cost"
+            [(ngModel)] = "parking.cost" name="cost">
+    </div>
+
+    <div>
+        <button class = "btn btn-success" type="submit">Submit</button>
+    </div>
+
+</form>
+</div>
